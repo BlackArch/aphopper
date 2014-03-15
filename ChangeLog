@@ -1,0 +1,33 @@
+#9/07/02  AP-Hopper-0.1
+Created the First incarnation from scratch.
+
+#9/09/02  AP-Hopper-0.2
+Added BSSID checking from MAPI
+Added BSSID bad file list for logging non functioning waps
+Added standard GPL Files (ie. COPYING)
+Added the ChangeLog File :)
+
+#9/10/02 AP-Hopper-0.2
+Added BSSID good file list for logging functional waps
+Fixed bug to create conf files that do not exist
+
+#9/21/02 AP-Hopper-0.2
+Added configure script
+Changed source to use wireless extensions directly
+Removed MAPI files
+!!!Ap Hopper is curently BROKEN!!!
+
+#9/22/02 AP-Hopper-0.2
+Worked more on fixing the integration with wireless extensions
+Added Matt Davidson to the Authors list (Thanks Slickwheel)
+Added more checks to the configure script
+Removed confusing and rather unessesary automake Makefile
+Added genmake Makefile.in
+
+#9/23/02 AP-Hopper-0.2
+!!!Fixed AP-Hopper!!! w00t w00t
+Added ESSID detection
+Fixed BSSID detection
+Added convert.c to convert BSSID's to readable format
+Regenerated Makefile.in to include convert.c
+Changed relink() to use direct kernel calls rather than calling iwconfig
